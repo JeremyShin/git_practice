@@ -27,5 +27,8 @@ class Control:
     def mul(self, a, b):
         return a*b
 
-    def div(self, a, b): # 나눗셈 함수 추가
+    def div(self, a, b):
         return a/b
+
+    def pow(self, a, b): # 제곱 연산 함수 추가
+        return pow(a, b)
