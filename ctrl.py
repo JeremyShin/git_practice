@@ -24,5 +24,8 @@ class Control:
     def sub(self, a, b):
         return a-b
 
-    def mul(self, a, b): # 곱셈 함수 추가
+    def mul(self, a, b):
         return a*b
+
+    def div(self, a, b): # 나눗셈 함수 추가
+        return a/b
