@@ -14,9 +14,21 @@ class Control:
         else:
             return "Calculation Error"
 
-    def connectSignals(self): # btn1 클릭하면 calculate 결과가 화면에 표시되도록 수정
+    def connectSignals(self):
         self.view.btn1.clicked.connect(lambda: self.view.setDisplay(self.calculate()))
         self.view.btn2.clicked.connect(self.view.clearMessage)
 
     def sum(self, a, b):
-            return a+b
+        return a+b
+
+    def sub(self, a, b):
+        return a-b
+
+    def mul(self, a, b):
+        return a*b
+
+    def div(self, a, b):
+        return a/b
+
+    def pow(self, a, b): # 제곱 연산 함수 추가
+        return pow(a, b)
